@@ -31,6 +31,7 @@
 		<tradeTags>
 			<li>CE_AutoEnableTrade</li>
 			<li>CE_AutoEnableCrafting_FabricationBench</li>
+			<li>CE_AutoEnableCrafting_UFR_ArmamentsBench</li>
 			<li>UFR_ETCAmmoSet</li>
 		</tradeTags>
 		<thingCategories>
@@ -326,6 +327,7 @@
 		<tradeTags>
 			<li>CE_AutoEnableTrade</li>
 			<li>CE_AutoEnableCrafting_FabricationBench</li>
+			<li>CE_AutoEnableCrafting_UFR_ArmamentsBench</li>
 			<li>UFR_ETCAmmoSet</li>
 		</tradeTags>
 		<thingCategories>
@@ -620,6 +622,7 @@
 		<tradeTags>
 			<li>CE_AutoEnableTrade</li>
 			<li>CE_AutoEnableCrafting_FabricationBench</li>
+			<li>CE_AutoEnableCrafting_UFR_ArmamentsBench</li>
 			<li>UFR_ETCAmmoSet</li>
 		</tradeTags>
 		<thingCategories>
@@ -1010,6 +1013,7 @@
 		<tradeTags>
 			<li>CE_AutoEnableTrade</li>
 			<li>CE_AutoEnableCrafting_FabricationBench</li>
+			<li>CE_AutoEnableCrafting_UFR_ArmamentsBench</li>
 			<li>UFR_ETCAmmoSet</li>
 		</tradeTags>
 		<thingCategories>

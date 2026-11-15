@@ -25,7 +25,6 @@
         <prerequisites>
             <li>UFR_ColonialFabricationMethods</li>
         </prerequisites>
-        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
         <researchViewX>1</researchViewX>
         <researchViewY>1.4</researchViewY>
     </ResearchProjectDef>
@@ -47,7 +46,7 @@
     <ResearchProjectDef>
         <defName>UFR_EngineerCarapaceArmor</defName>
         <label>Engineer Carapace Armor</label>
-        <description>Craft a engineer variant of carapace armor with tool kits. Note that these also require advanced components.</description>
+        <description>Craft an engineer variant of carapace armor with tool kits. Note that these also require advanced components.</description>
         <baseCost>2400</baseCost>
         <tab>UFR_ResearchTab</tab>
         <techLevel>Spacer</techLevel>
@@ -89,7 +88,7 @@
     <ResearchProjectDef>
         <defName>UFR_AssaultCarapaceArmor</defName>
         <label>Assault Carapace Armor</label>
-        <description>Craft a assault variant of carapace armor with additional armor. Note that these also require advanced components.</description>
+        <description>Craft an assault variant of carapace armor with additional armor. Note that these also require advanced components.</description>
         <baseCost>2400</baseCost>
         <tab>UFR_ResearchTab</tab>
         <techLevel>Spacer</techLevel>
@@ -110,10 +109,6 @@
         <prerequisites>
             <li>UFR_CarapaceArmor</li>
         </prerequisites>
-        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-        <requiredResearchFacilities>
-            <li>MultiAnalyzer</li>
-        </requiredResearchFacilities>
         <researchViewX>3</researchViewX>
         <researchViewY>2.8</researchViewY>
     </ResearchProjectDef>
@@ -128,10 +123,6 @@
         <prerequisites>
             <li>UFR_CarapaceArmor</li>
         </prerequisites>
-        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-        <requiredResearchFacilities>
-            <li>MultiAnalyzer</li>
-        </requiredResearchFacilities>
         <researchViewX>3</researchViewX>
         <researchViewY>1.4</researchViewY>
     </ResearchProjectDef>    
@@ -181,7 +172,7 @@
 
     <ResearchProjectDef>
         <defName>UFR_ETCMunitions</defName>
-        <label>Electrothermal-Chemical Munitions</label>
+        <label>ETC Munitions</label>
         <description>Build weapons which use electrothermal-chemical plasma charges to fire depleted uranium sabots. Note these also require advanced components</description>
         <baseCost>2400</baseCost>
         <tab>UFR_ResearchTab</tab>
@@ -189,14 +180,13 @@
         <prerequisites>
             <li>UFR_ColonialFabricationMethods</li>
         </prerequisites>
-        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
         <researchViewX>1</researchViewX>
         <researchViewY>5.6</researchViewY>
     </ResearchProjectDef>
 
     <ResearchProjectDef>
         <defName>UFR_HeavyETCMunitions</defName>
-        <label>Heavy Electrothermal-Chemical Munitions</label>
+        <label>Heavy ETC Munitions</label>
         <description>Build heavy electrothermal-chemical weapons which fire heavy sabots at anti-materiel velocities. Note these also require advanced components.</description>
         <baseCost>3200</baseCost>
         <tab>UFR_ResearchTab</tab>

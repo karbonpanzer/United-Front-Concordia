@@ -148,8 +148,8 @@
 
     <PawnKindDef ParentName="UFR_LineVeteranRanged">
         <defName>UFR_Rough_Veteran_Ranged</defName>
-        <label>legionaire</label>
-        <labelPlural>legionaires</labelPlural>
+        <label>legionnaire</label>
+        <labelPlural>legionnaires</labelPlural>
         <defaultFactionType>UFR_ColonialMilitia</defaultFactionType>
         <combatPower>150</combatPower>
         <minGenerationAge>30</minGenerationAge>
@@ -158,8 +158,8 @@
 
     <PawnKindDef ParentName="UFR_LineVeteranMelee">
         <defName>UFR_Rough_Veteran_Melee</defName>
-        <label>legionaire</label>
-        <labelPlural>legionaires</labelPlural>
+        <label>legionnaire</label>
+        <labelPlural>legionnaires</labelPlural>
         <defaultFactionType>UFR_ColonialMilitia</defaultFactionType>
         <combatPower>150</combatPower>
         <minGenerationAge>30</minGenerationAge>

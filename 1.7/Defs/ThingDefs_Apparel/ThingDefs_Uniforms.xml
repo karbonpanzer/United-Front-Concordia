@@ -5,7 +5,7 @@
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>UFR_InfantryUniform</defName>
     <label>infantry uniform</label>
-    <description>A jumpsuit featuring various pockets and designed to be accomodating in most environments.</description>
+    <description>A jumpsuit featuring various pockets and designed to be accommodating in most environments.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>UFR/Things/Pawn/Humanlike/Clothes/FieldUniform</texPath>
@@ -146,7 +146,7 @@
   <ThingDef ParentName="HatMakeableBase">
     <defName>UFR_Hat_Beret</defName>
     <label>beret</label>
-    <description>A soft, round, cap made from fabrics and often used my imperial army personal and urbworld artists.</description>
+    <description>A soft, round, cap made from fabrics and often used by imperial army personnel and urbworld artists.</description>
     <graphicData>
       <texPath>UFR/Things/Pawn/Humanlike/Clothes/frontberet</texPath>
       <graphicClass>Graphic_Single</graphicClass>

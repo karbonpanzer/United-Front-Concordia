@@ -70,6 +70,7 @@
     <weaponTags>
       <li>UFR_SpacerGun</li>
       <li>SpacerGun</li>
+      <li MayRequire="CETeam.CombatExtended">UFR_Sidearm</li>
     </weaponTags>
     <weaponClasses>
       <li>RangedLight</li>

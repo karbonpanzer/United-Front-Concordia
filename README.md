@@ -1,4 +1,4 @@
-<p align="center"><img src="About/preview.png" alt="United Front - Colonials" width="1280"></p>
+<p align="center"><img src="About/preview.png" alt="United Front - Concordia" width="1280"></p>
 <p align="center"><img src="About/Screenshot1_Armor.png" alt="Armor" width="1280"></p>
 <p align="center"><img src="About/Screenshot2_Weapons.png" alt="Weapons" width="1280"></p>
 <p align="center"><img src="About/Screenshot3_Goodies.png" alt="Goodies" width="1280"></p>
@@ -38,9 +38,9 @@ The United Front adds in a new group arriving to the rimworld, which are the "Co
 ## Apparel
 
 - **Carapace Armor** - A suit of armor, made up of a lightweight plasteel-weave plates which provide moderate protection and with an integrated webbing system configured for standard infantry use. Created as a cheaper alternative to power armor during conflicts. Armor like this is often used by imperial army regulars and urbworld military forces.
-- **Carapace Helmet** - A armored helmet with built in communication system and a protective plasteel-weave plate. Armor like this is often used by imperial army regulars and urbworld military forces.
-- **Carapace Boots** - A set of plasteel-weave plate boots. They provide decent protection and cause no hinderence to the wearer.
-- **Carapace Gloves** - A set of plasteel-weave plate gloves. They provide decent protection and cause no hinderence to the wearer.
+- **Carapace Helmet** - An armored helmet with built in communication system and a protective plasteel-weave plate. Armor like this is often used by imperial army regulars and urbworld military forces.
+- **Carapace Boots** - A set of plasteel-weave plate boots. They provide decent protection and cause no hindrance to the wearer.
+- **Carapace Gloves** - A set of plasteel-weave plate gloves. They provide decent protection and cause no hindrance to the wearer.
 - **Medic Carapace Armor and Helmet** - Medical tend quality +10%.
 - **Engineer Carapace Armor and Helmet** - Construction speed +10%.
 - **Police Carapace Armor and Helmet** - Slave suppression +10%.
@@ -48,9 +48,9 @@ The United Front adds in a new group arriving to the rimworld, which are the "Co
 - **Assault Carapace Armor and Helmet** - Melee damage +10%. Can throw frag grenades (8 charges, refilled with frag grenades).
 - **Scout Carapace Armor and Helmet** - Shooting accuracy +0.5. Grants the stealth field ability, turning the wearer invisible for a short time; using a weapon collapses the field.
 - **Veteran Carapace Armor and Helmet** - Pain shock threshold +10%.
-- **Assault Shield Belt** - A modified projectile-repulsion device. It will still attempt to stop incoming projectiles and shrapnel but has been enhanced to provide stranger protection against heat and to allow the wearer to fire while the shield is active. The cost though is that it takes longer to recharge, the shield is weaker, and shuts down instantly if hit by EMP.
-- **Infantry Uniform** - A jumpsuit featuring various pockets and designed to be accomodating in most environments.
-- **Beret** - A soft, round, cap made from fabrics and often used my imperial army personal and urbworld artists.
+- **Assault Shield Belt** - A modified projectile-repulsion device. It will still attempt to stop incoming projectiles and shrapnel but has been enhanced to provide stronger protection against heat and to allow the wearer to fire while the shield is active. The cost though is that it takes longer to recharge, the shield is weaker, and shuts down instantly if hit by EMP.
+- **Infantry Uniform** - A jumpsuit featuring various pockets and designed to be accommodating in most environments.
+- **Beret** - A soft, round, cap made from fabrics and often used by imperial army personnel and urbworld artists.
 - **Commander Cap** - A hat featuring a short visor, a polished leather strap, and high quality fabrics. Often worn by imperial army commanders and urbworld dictators.
 
 ## Weapons
@@ -61,21 +61,22 @@ The United Front adds in a new group arriving to the rimworld, which are the "Co
 - **Sabot Sniper Rifle** - A specialized electrothermal-chemical rifle designed for extreme-ranges and anti-tank usage.
 - **Sabot Autocannon** - A massive electrothermal-chemical rotary cannon converted to portable use.
 - **Frequency Knife** - A composite plasteel dagger fitted with a small resonator which vibrates the blade at high frequencies.
-- **Frequency Sword** - A compositie plasteel sword fitted with a resonator which vibrates the blade at high frequencies.
+- **Frequency Sword** - A composite plasteel sword fitted with a resonator which vibrates the blade at high frequencies.
 - **Frequency Spear** - A composite plasteel spear fitted with an overclocked resonator which vibrates the spearhead at incredibly high frequencies.
 - **Frequency Club** - A composite plasteel club fitted with a resonator which vibrates the head at high frequencies. Its strikes also deal EMP damage.
-- **Frequency Hammer** - A composite plasteel warhammer fitted with a overclocked resonator which vibrates the head at incredibly high frequencies.
+- **Frequency Hammer** - A composite plasteel warhammer fitted with an overclocked resonator which vibrates the head at incredibly high frequencies.
+- **Frequency Greatsword** - A composite plasteel greatsword fitted with an overclocked resonator which vibrates the blade at incredibly high frequencies.
 
 ## Extras
 
-- **Armaments Bench** - A workbench needed to produce Carapace Armor, Sabot, and Frequency weapons..
+- **Armaments Bench** - A workbench needed to produce Carapace Armor, Sabot, and Frequency weapons. With Combat Extended it also makes ETC ammo.
 - **Promachus** - A manufactured cocktail of alcohol, painkillers, and radioactive materials for usage by assault troops.
 
 ## Combat Extended
 
 <p align="center"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2890901044"><img src="https://raw.githubusercontent.com/CombatExtended-Continued/CombatExtended/master/Media/Badge_CE_compatible.png" alt="Combat Extended compatible"></a></p>
 
-United Front - Colonials has built-in Combat Extended support, no separate patch needed. Though suggestions are welcome to improve the patch.
+United Front - Concordia has built-in Combat Extended support, no separate patch needed. Though suggestions are welcome to improve the patch.
 
 | Weapon | Ammo |
 |---|---|
@@ -84,7 +85,6 @@ United Front - Colonials has built-in Combat Extended support, no separate patch
 | Sabot Assault Rifle | 8x48mm ETC (30) |
 | Sabot Sniper Rifle | 14x80mm ETC (5) |
 | Sabot Autocannon | 14x80mm ETC (30) |
-| Pulse Rifle (with Xenomorphtypes) | 4.73x33mm Caseless (95)|
 
 ## FAQ
 

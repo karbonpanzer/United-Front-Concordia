@@ -40,6 +40,44 @@
         <range>5~11</range>
       </li>
     </skills>
+    <modExtensions>
+      <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="CETeam.CombatExtended">
+        <primaryMagazineCount>3~5</primaryMagazineCount>
+        <sidearms>
+          <li>
+            <generateChance>0.5</generateChance>
+            <sidearmMoney>150~350</sidearmMoney>
+            <weaponTags>
+              <li>CE_Sidearm_Melee</li>
+            </weaponTags>
+          </li>
+          <li>
+            <generateChance>0.175</generateChance>
+            <sidearmMoney>80~160</sidearmMoney>
+            <weaponTags>
+              <li>CE_FlareLauncher</li>
+            </weaponTags>
+            <magazineCount>4~8</magazineCount>
+          </li>
+          <li>
+            <generateChance>0.25</generateChance>
+            <sidearmMoney>10~100</sidearmMoney>
+            <weaponTags>
+              <li>GrenadeSmoke</li>
+            </weaponTags>
+            <magazineCount>0~1</magazineCount>
+          </li>
+          <li>
+            <generateChance>0.15</generateChance>
+            <sidearmMoney>10~100</sidearmMoney>
+            <weaponTags>
+              <li>GrenadeDestructive</li>
+            </weaponTags>
+            <magazineCount>0~0</magazineCount>
+          </li>
+        </sidearms>
+      </li>
+    </modExtensions>
   </PawnKindDef>
 
 </Defs>

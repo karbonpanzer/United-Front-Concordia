@@ -4,7 +4,7 @@
   <ThingDef ParentName="ApparelBase">
     <defName>UFR_AssaultShieldBelt</defName>
     <label>assault shield belt</label>
-    <description>A modified projectile-repulsion device. It will still attempt to stop incoming projectiles and shrapnel but has been enhanced to provide stranger protection against heat and to allow the wearer to fire while the shield is active.\n\nThe cost though is that it takes longer to recharge, the shield is weaker, and shuts down instantly if hit by EMP.</description>
+    <description>A modified projectile-repulsion device. It will still attempt to stop incoming projectiles and shrapnel but has been enhanced to provide stronger protection against heat and to allow the wearer to fire while the shield is active.\n\nThe cost though is that it takes longer to recharge, the shield is weaker, and shuts down instantly if hit by EMP.</description>
     <thingClass>Apparel</thingClass>
     <techLevel>Spacer</techLevel>
     <tickerType>Normal</tickerType>

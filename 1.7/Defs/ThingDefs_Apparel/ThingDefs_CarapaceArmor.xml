@@ -173,7 +173,7 @@
   <ThingDef ParentName="UFR_ApparelArmorHelmetCarapaceBase">
     <defName>UFR_CarapaceHelmet</defName>
     <label>carapace helmet</label>
-    <description>A armored helmet with built in communication system and a protective plasteel-weave plate. Armor like this is often used by imperial army regulars and urbworld military forces.</description>
+    <description>An armored helmet with built in communication system and a protective plasteel-weave plate. Armor like this is often used by imperial army regulars and urbworld military forces.</description>
     <graphicData>
       <texPath>UFR/Things/Pawn/Humanlike/Armor/CarapaceArmor/CarapaceHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -215,7 +215,7 @@
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>UFR_CarapaceBoots</defName>
     <label>carapace boots</label>
-    <description>A set of plasteel-weave plate boots. They provide decent protection and cause no hinderence to the wearer.</description>
+    <description>A set of plasteel-weave plate boots. They provide decent protection and cause no hindrance to the wearer.</description>
     <graphicData>
       <texPath>UFR/Things/Pawn/Humanlike/Armor/CarapaceAccessories/CarapaceBoots</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -288,7 +288,7 @@
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>UFR_CarapaceGloves</defName>
     <label>carapace gloves</label>
-    <description>A set of plasteel-weave plate gloves. They provide decent protection and cause no hinderence to the wearer.</description>
+    <description>A set of plasteel-weave plate gloves. They provide decent protection and cause no hindrance to the wearer.</description>
     <graphicData>
       <texPath>UFR/Things/Pawn/Humanlike/Armor/CarapaceAccessories/CarapaceGloves</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -402,7 +402,7 @@
   <ThingDef ParentName="UFR_ApparelArmorHelmetCarapaceBase">
     <defName>UFR_MedicCarapaceHelmet</defName>
     <label>medic carapace helmet</label>
-    <description>A armored helmet with built in communication system and a protective plasteel-weave plate. Armor like this is often used by imperial army medics and urbworld military forces and is marked as such.</description>
+    <description>An armored helmet with built in communication system and a protective plasteel-weave plate. Armor like this is often used by imperial army medics and urbworld military forces and is marked as such.</description>
     <graphicData>
       <texPath>UFR/Things/Pawn/Humanlike/Armor/MedicCarapaceArmor/MedicCarapaceHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -485,7 +485,7 @@
   <ThingDef ParentName="UFR_ApparelArmorHelmetCarapaceBase">
     <defName>UFR_EngineerCarapaceHelmet</defName>
     <label>engineer carapace helmet</label>
-    <description>A armored helmet with built in communication system and a protective plasteel-weave plate. Armor like this is often used by imperial army engineers and urbworld military sappers and is marked as such.</description>
+    <description>An armored helmet with built in communication system and a protective plasteel-weave plate. Armor like this is often used by imperial army engineers and urbworld military sappers and is marked as such.</description>
     <graphicData>
       <texPath>UFR/Things/Pawn/Humanlike/Armor/EngineerCarapaceArmor/EngineerCarapaceHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -569,7 +569,7 @@
   <ThingDef ParentName="UFR_ApparelArmorHelmetCarapaceBase">
     <defName>UFR_MPCarapaceHelmet</defName>
     <label>police carapace helmet</label>
-    <description>A armored helmet with built in communication system and a protective plasteel-weave plate. Armor like this is often used by imperial army provosts and urbworld military judges and is marked as such.</description>
+    <description>An armored helmet with built in communication system and a protective plasteel-weave plate. Armor like this is often used by imperial army provosts and urbworld military judges and is marked as such.</description>
     <graphicData>
       <texPath>UFR/Things/Pawn/Humanlike/Armor/MPCarapaceArmor/MPCarapaceHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -656,7 +656,7 @@
   <ThingDef ParentName="UFR_ApparelArmorHelmetCarapaceBase">
     <defName>UFR_CommanderCarapaceHelmet</defName>
     <label>commander carapace helmet</label>
-    <description>A armored helmet with built in communication system and a protective plasteel-weave plate. Armor like this is often used by imperial army commanders and urbworld military officers and is marked as such.</description>
+    <description>An armored helmet with built in communication system and a protective plasteel-weave plate. Armor like this is often used by imperial army commanders and urbworld military officers and is marked as such.</description>
     <graphicData>
       <texPath>UFR/Things/Pawn/Humanlike/Armor/CommanderCarapaceArmor/CommanderCarapaceHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -776,7 +776,7 @@
   <ThingDef ParentName="UFR_ApparelArmorHelmetCarapaceBase">
     <defName>UFR_AssaultCarapaceHelmet</defName>
     <label>assault carapace helmet</label>
-    <description>A armored helmet with built in communication system, a protective plasteel-weave plate, and modified to include a face guard. Armor like this is often used by imperial army commandos and urbworld military shocktroopers and is marked as such.</description>
+    <description>An armored helmet with built in communication system, a protective plasteel-weave plate, and modified to include a face guard. Armor like this is often used by imperial army commandos and urbworld military shocktroopers and is marked as such.</description>
     <graphicData>
       <texPath>UFR/Things/Pawn/Humanlike/Armor/AssaultCarapaceArmor/AssaultCarapaceHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -817,7 +817,7 @@
   <ThingDef ParentName="UFR_ApparelArmorCarapaceBase">
     <defName>UFR_ScoutCarapaceArmor</defName>
     <label>scout carapace armor</label>
-    <description>A suit of armor, made up of lightweight plasteel-weave plates which provide moderate protection, featuring a bandoleer for high caliber bullets, and a thermooptical camoflague generator. Created as a cheaper alternative to power armor during conflicts. Armor like this is often used by imperial army scouts and urbworld military assassins and is marked as such.</description>
+    <description>A suit of armor, made up of lightweight plasteel-weave plates which provide moderate protection, featuring a bandoleer for high caliber bullets, and a thermooptical camouflage generator. Created as a cheaper alternative to power armor during conflicts. Armor like this is often used by imperial army scouts and urbworld military assassins and is marked as such.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>UFR/Things/Pawn/Humanlike/Armor/ScoutCarapaceArmor/ScoutCarapaceArmor</texPath>
@@ -863,7 +863,7 @@
   <ThingDef ParentName="UFR_ApparelArmorHelmetCarapaceBase">
     <defName>UFR_ScoutCarapaceHelmet</defName>
     <label>scout carapace helmet</label>
-    <description>A armored helmet with built in communication system, protective plasteel-weave plate, an advanced targeting system, and a oxygen recycler for hazardous environments. Armor like this is often used by imperial army scouts and urbworld assassins and is marked as such.</description>
+    <description>An armored helmet with built in communication system, protective plasteel-weave plate, an advanced targeting system, and an oxygen recycler for hazardous environments. Armor like this is often used by imperial army scouts and urbworld assassins and is marked as such.</description>
     <graphicData>
       <texPath>UFR/Things/Pawn/Humanlike/Armor/ScoutCarapaceArmor/ScoutCarapaceHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -947,7 +947,7 @@
   <ThingDef ParentName="UFR_ApparelArmorHelmetCarapaceBase">
     <defName>UFR_VeteranCarapaceHelmet</defName>
     <label>veteran carapace helmet</label>
-    <description>A armored helmet with built in communication system, improvised cheek guards and a protective plasteel-weave plate. Armor like this is often used by imperial army veterans and urbworld mercenaries.</description>
+    <description>An armored helmet with built in communication system, improvised cheek guards and a protective plasteel-weave plate. Armor like this is often used by imperial army veterans and urbworld mercenaries.</description>
     <graphicData>
       <texPath>UFR/Things/Pawn/Humanlike/Armor/VeteranCarapaceArmor/VeteranCarapaceHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>

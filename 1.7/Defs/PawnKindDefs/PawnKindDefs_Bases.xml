@@ -36,6 +36,20 @@
     <weaponTags>
       <li>SimpleGun</li>
     </weaponTags>
+    <modExtensions>
+      <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="CETeam.CombatExtended">
+        <primaryMagazineCount>1~2</primaryMagazineCount>
+        <sidearms>
+          <li>
+            <generateChance>0.5</generateChance>
+            <sidearmMoney>20~120</sidearmMoney>
+            <weaponTags>
+              <li>CE_Sidearm_Melee</li>
+            </weaponTags>
+          </li>
+        </sidearms>
+      </li>
+    </modExtensions>
   </PawnKindDef>
 
   <PawnKindDef Name="UFR_LaborerBase" ParentName="UFR_CivilianBase" Abstract="True">
@@ -94,6 +108,20 @@
       <li>SimpleGun</li>
       <li>IndustrialGunAdvanced</li>
     </weaponTags>
+    <modExtensions>
+      <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="CETeam.CombatExtended">
+        <primaryMagazineCount>1~2</primaryMagazineCount>
+        <sidearms>
+          <li>
+            <generateChance>0.5</generateChance>
+            <sidearmMoney>20~120</sidearmMoney>
+            <weaponTags>
+              <li>CE_Sidearm_Melee</li>
+            </weaponTags>
+          </li>
+        </sidearms>
+      </li>
+    </modExtensions>
   </PawnKindDef>
 
   <!-- Fighters -->
@@ -157,6 +185,38 @@
         <range>2~6</range>
       </li>
     </skills>
+    <modExtensions>
+      <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="CETeam.CombatExtended">
+        <primaryMagazineCount>2~3</primaryMagazineCount>
+        <sidearms>
+          <li>
+            <generateChance>0.5</generateChance>
+            <sidearmMoney>10~100</sidearmMoney>
+            <weaponTags>
+              <li>CE_Sidearm_Melee</li>
+            </weaponTags>
+          </li>
+          <li>
+            <generateChance>0.15</generateChance>
+            <sidearmMoney>80~160</sidearmMoney>
+            <weaponTags>
+              <li>CE_FlareLauncher</li>
+            </weaponTags>
+            <magazineCount>2~5</magazineCount>
+          </li>
+          <li>
+            <generateChance>0.1</generateChance>
+            <sidearmMoney>80~160</sidearmMoney>
+            <weaponTags>
+              <li>CE_GrenadeFlashbang</li>
+              <li>GrenadeSmoke</li>
+              <li>GrenadeDestructive</li>
+            </weaponTags>
+            <magazineCount>0~0</magazineCount>
+          </li>
+        </sidearms>
+      </li>
+    </modExtensions>
   </PawnKindDef>
 
   <PawnKindDef Name="UFR_LineInfantryRanged" ParentName="UFR_MilitaryBase" Abstract="True">
@@ -188,6 +248,39 @@
     <disallowedTraits>
       <li>Brawler</li>
     </disallowedTraits>
+    <modExtensions>
+      <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="CETeam.CombatExtended">
+        <primaryMagazineCount>2~4</primaryMagazineCount>
+        <minAmmoCount>20</minAmmoCount>
+        <sidearms>
+          <li>
+            <generateChance>0.5</generateChance>
+            <sidearmMoney>700~1000</sidearmMoney>
+            <weaponTags>
+              <li>UFR_Sidearm_Melee</li>
+            </weaponTags>
+          </li>
+          <li>
+            <generateChance>0.1</generateChance>
+            <sidearmMoney>80~160</sidearmMoney>
+            <weaponTags>
+              <li>CE_FlareLauncher</li>
+            </weaponTags>
+            <magazineCount>1~3</magazineCount>
+          </li>
+          <li>
+            <generateChance>0.1</generateChance>
+            <sidearmMoney>80~160</sidearmMoney>
+            <weaponTags>
+              <li>CE_GrenadeFlashbang</li>
+              <li>GrenadeSmoke</li>
+              <li>GrenadeDestructive</li>
+            </weaponTags>
+            <magazineCount>0~1</magazineCount>
+          </li>
+        </sidearms>
+      </li>
+    </modExtensions>
   </PawnKindDef>
 
   <PawnKindDef Name="UFR_LineInfantryMelee" ParentName="UFR_MilitaryBase" Abstract="True">
@@ -249,6 +342,44 @@
     <disallowedTraits>
       <li>Brawler</li>
     </disallowedTraits>
+    <modExtensions>
+      <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="CETeam.CombatExtended">
+        <primaryMagazineCount>3~5</primaryMagazineCount>
+        <sidearms>
+          <li>
+            <sidearmMoney>700~1000</sidearmMoney>
+            <weaponTags>
+              <li>UFR_Sidearm_Melee</li>
+            </weaponTags>
+          </li>
+          <li>
+            <generateChance>0.1</generateChance>
+            <sidearmMoney>80~160</sidearmMoney>
+            <weaponTags>
+              <li>CE_FlareLauncher</li>
+            </weaponTags>
+            <magazineCount>1~3</magazineCount>
+          </li>
+          <li>
+            <generateChance>0.5</generateChance>
+            <sidearmMoney>160~320</sidearmMoney>
+            <weaponTags>
+              <li>GrenadeDestructive</li>
+            </weaponTags>
+            <magazineCount>0~2</magazineCount>
+          </li>
+          <li>
+            <generateChance>0.5</generateChance>
+            <sidearmMoney>160~320</sidearmMoney>
+            <weaponTags>
+              <li>CE_GrenadeFlashbang</li>
+              <li>GrenadeSmoke</li>
+            </weaponTags>
+            <magazineCount>0~1</magazineCount>
+          </li>
+        </sidearms>
+      </li>
+    </modExtensions>
   </PawnKindDef>
 
   <PawnKindDef Name="UFR_LineVeteranMelee" ParentName="UFR_MilitaryBase" Abstract="True">
@@ -344,6 +475,44 @@
         <range>5~12</range>
       </li>
     </skills>
+    <modExtensions>
+      <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="CETeam.CombatExtended">
+        <primaryMagazineCount>3~5</primaryMagazineCount>
+        <sidearms>
+          <li>
+            <sidearmMoney>700~1000</sidearmMoney>
+            <weaponTags>
+              <li>UFR_Sidearm_Melee</li>
+            </weaponTags>
+          </li>
+          <li>
+            <generateChance>0.1</generateChance>
+            <sidearmMoney>80~160</sidearmMoney>
+            <weaponTags>
+              <li>CE_FlareLauncher</li>
+            </weaponTags>
+            <magazineCount>1~3</magazineCount>
+          </li>
+          <li>
+            <generateChance>0.5</generateChance>
+            <sidearmMoney>160~320</sidearmMoney>
+            <weaponTags>
+              <li>GrenadeDestructive</li>
+            </weaponTags>
+            <magazineCount>0~2</magazineCount>
+          </li>
+          <li>
+            <generateChance>0.5</generateChance>
+            <sidearmMoney>160~320</sidearmMoney>
+            <weaponTags>
+              <li>CE_GrenadeFlashbang</li>
+              <li>GrenadeSmoke</li>
+            </weaponTags>
+            <magazineCount>0~1</magazineCount>
+          </li>
+        </sidearms>
+      </li>
+    </modExtensions>
   </PawnKindDef>
 
   <PawnKindDef Name="UFR_MedicBase" ParentName="UFR_MilitaryBase" Abstract="True">
@@ -394,6 +563,39 @@
         <range>3~5</range>
       </li>
     </skills>
+    <modExtensions>
+      <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="CETeam.CombatExtended">
+        <primaryMagazineCount>2~4</primaryMagazineCount>
+        <minAmmoCount>20</minAmmoCount>
+        <sidearms>
+          <li>
+            <generateChance>0.5</generateChance>
+            <sidearmMoney>700~1000</sidearmMoney>
+            <weaponTags>
+              <li>UFR_Sidearm_Melee</li>
+            </weaponTags>
+          </li>
+          <li>
+            <generateChance>0.1</generateChance>
+            <sidearmMoney>80~160</sidearmMoney>
+            <weaponTags>
+              <li>CE_FlareLauncher</li>
+            </weaponTags>
+            <magazineCount>1~3</magazineCount>
+          </li>
+          <li>
+            <generateChance>0.1</generateChance>
+            <sidearmMoney>80~160</sidearmMoney>
+            <weaponTags>
+              <li>CE_GrenadeFlashbang</li>
+              <li>GrenadeSmoke</li>
+              <li>GrenadeDestructive</li>
+            </weaponTags>
+            <magazineCount>0~1</magazineCount>
+          </li>
+        </sidearms>
+      </li>
+    </modExtensions>
   </PawnKindDef>
 
   <PawnKindDef Name="UFR_EngineerBase" ParentName="UFR_MilitaryBase" Abstract="True">
@@ -435,6 +637,39 @@
         <range>3~5</range>
       </li>
     </skills>
+    <modExtensions>
+      <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="CETeam.CombatExtended">
+        <primaryMagazineCount>2~4</primaryMagazineCount>
+        <minAmmoCount>20</minAmmoCount>
+        <sidearms>
+          <li>
+            <generateChance>0.5</generateChance>
+            <sidearmMoney>700~1000</sidearmMoney>
+            <weaponTags>
+              <li>UFR_Sidearm_Melee</li>
+            </weaponTags>
+          </li>
+          <li>
+            <generateChance>0.1</generateChance>
+            <sidearmMoney>80~160</sidearmMoney>
+            <weaponTags>
+              <li>CE_FlareLauncher</li>
+            </weaponTags>
+            <magazineCount>1~3</magazineCount>
+          </li>
+          <li>
+            <generateChance>0.1</generateChance>
+            <sidearmMoney>80~160</sidearmMoney>
+            <weaponTags>
+              <li>CE_GrenadeFlashbang</li>
+              <li>GrenadeSmoke</li>
+              <li>GrenadeDestructive</li>
+            </weaponTags>
+            <magazineCount>0~1</magazineCount>
+          </li>
+        </sidearms>
+      </li>
+    </modExtensions>
   </PawnKindDef>
 
   <PawnKindDef Name="UFR_ScoutBase" ParentName="UFR_MilitaryBase" Abstract="True">
@@ -481,6 +716,35 @@
     <disallowedTraits>
       <li>Brawler</li>
     </disallowedTraits>
+    <modExtensions>
+      <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="CETeam.CombatExtended">
+        <primaryMagazineCount>3~5</primaryMagazineCount>
+        <sidearms>
+          <li>
+            <generateChance>1</generateChance>
+            <sidearmMoney>700~1000</sidearmMoney>
+            <weaponTags>
+              <li>UFR_Sidearm_Melee</li>
+            </weaponTags>
+          </li>
+          <li>
+            <generateChance>0.5</generateChance>
+            <sidearmMoney>1600~2000</sidearmMoney>
+            <weaponTags>
+              <li>UFR_Sidearm</li>
+            </weaponTags>
+          </li>
+          <li>
+            <generateChance>0.15</generateChance>
+            <sidearmMoney>80~160</sidearmMoney>
+            <weaponTags>
+              <li>GrenadeSmoke</li>
+            </weaponTags>
+            <magazineCount>0~0</magazineCount>
+          </li>
+        </sidearms>
+      </li>
+    </modExtensions>
   </PawnKindDef>
 
   <PawnKindDef Name="UFR_ShocktrooperBase" ParentName="UFR_MilitaryBase" Abstract="True">
@@ -529,6 +793,35 @@
         </li>
       </subOptionsChooseOne>  
     </inventoryOptions>
+    <modExtensions>
+      <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="CETeam.CombatExtended">
+        <primaryMagazineCount>6~14</primaryMagazineCount>
+        <forcedSidearm>
+          <sidearmMoney>150~350</sidearmMoney>
+          <weaponTags>
+            <li>CE_SMG</li>
+          </weaponTags>
+          <magazineCount>0~1</magazineCount>
+        </forcedSidearm>
+        <sidearms>
+          <li>
+            <generateChance>0.5</generateChance>
+            <sidearmMoney>700~1000</sidearmMoney>
+            <weaponTags>
+              <li>UFR_Sidearm_Melee</li>
+            </weaponTags>
+          </li>
+          <li>
+            <generateChance>0.15</generateChance>
+            <sidearmMoney>80~160</sidearmMoney>
+            <weaponTags>
+              <li>GrenadeSmoke</li>
+            </weaponTags>
+            <magazineCount>0~0</magazineCount>
+          </li>
+        </sidearms>
+      </li>
+    </modExtensions>
   </PawnKindDef>
 
 </Defs>

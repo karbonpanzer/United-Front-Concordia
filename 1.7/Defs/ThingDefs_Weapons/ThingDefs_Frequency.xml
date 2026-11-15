@@ -4,7 +4,7 @@
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>UFR_FrequencySword</defName>
     <label>frequency sword</label>
-    <description>A compositie plasteel sword fitted with a resonator which vibrates the blade at high frequencies. The oscillation of the blade weakens the molecular structure of anything that it cuts, though it is quite heavy.</description>
+    <description>A composite plasteel sword fitted with a resonator which vibrates the blade at high frequencies. The oscillation of the blade weakens the molecular structure of anything that it cuts, though it is quite heavy.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>UFR/Things/Item/Equipment/frequencysword</texPath>
@@ -216,6 +216,7 @@
     <weaponTags>
       <li>UltratechMelee</li>
       <li>UFR_StandardMelee</li>
+      <li MayRequire="CETeam.CombatExtended">UFR_Sidearm_Melee</li>
     </weaponTags>
     <weaponClasses>
       <li>Melee</li>
@@ -303,7 +304,7 @@
   <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
     <defName>UFR_FrequencyHammer</defName>
     <label>frequency hammer</label>
-    <description>A composite plasteel warhammer fitted with a overclocked resonator which vibrates the head at incredibly high frequencies. The oscillation of the head can not only weaken armor but with the right strike can shatter armor into pieces. The weight of the weapon provides an increased effect on strikes but it is slow to use.</description>
+    <description>A composite plasteel warhammer fitted with an overclocked resonator which vibrates the head at incredibly high frequencies. The oscillation of the head can not only weaken armor but with the right strike can shatter armor into pieces. The weight of the weapon provides an increased effect on strikes but it is slow to use.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>UFR/Things/Item/Equipment/frequencyhammer</texPath>
