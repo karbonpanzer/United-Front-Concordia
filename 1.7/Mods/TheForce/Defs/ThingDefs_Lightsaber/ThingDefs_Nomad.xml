@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <Lightsaber.HiltDef ParentName="Force_LightsaberHiltBase">
+    <defName>UFR_LightsaberHilt_Nomad</defName>
+    <label>Nomad</label>
+    <graphicData>
+      <texPath>UFR/Things/Item/Equipment/Lightsaber/Nomad</texPath>
+    </graphicData>
+  </Lightsaber.HiltDef>
+
+  <ThingDef ParentName="Force_LightsaberBase">
+    <defName>UFR_Lightsaber_Nomad</defName>
+    <label>Nomad</label>
+    <description>A lightsaber once used by a forlorn Jedi, forced into exile after a great catastrophe and hunted by friend and foe. The weapon of a warrior and scholar, its weight is perfectly balanced for duelists. The forlorn Jedi though, is lost to history, their legend still remains.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>UFR/Things/Item/Equipment/Lightsaber/Nomad</texPath>
+    </graphicData>
+    <weaponTags Inherit="False">
+      <li>UFR_Lightsaber</li>
+    </weaponTags>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <WorkToMake>3000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <PsychicEntropyRecoveryRate MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">0.1</PsychicEntropyRecoveryRate>
+      <MeditationFocusGain MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">0.1</MeditationFocusGain>
+      <MeleeHitChance>0.05</MeleeHitChance>
+    </equippedStatOffsets>
+    <generateCommonality>0.001</generateCommonality>
+    <colorGenerator IsNull="True"/>
+    <comps>
+      <li Class="Lightsaber.CompProperties_LightsaberBlade">
+        <bladeGraphicData>
+          <texPath>Things/Item/Lightsaber/SingleSaber/SaberOutline/White_Outline</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>Force_LightsaberGlow</shaderType>
+          <shaderParameters>
+            <_BladeIntensity1>1</_BladeIntensity1>
+            <_CoreTex1>/Things/Item/Lightsaber/SingleSaber/SaberCore/White_Core</_CoreTex1>
+            <_CoreIntensity1>1</_CoreIntensity1>
+            <_GlowTex1>/Things/Item/Lightsaber/SingleSaber/SaberOutline/White_Pulse</_GlowTex1>
+            <_GlowIntensity1>1</_GlowIntensity1>
+            <_GlowSpeed1>1</_GlowSpeed1>
+            <_GlowTex2>/Things/Item/Lightsaber/SingleSaber/SaberOutline/White_Glow</_GlowTex2>
+            <_NumFrames>1</_NumFrames>
+            <_AgeSecs>0</_AgeSecs>
+            <_FramesPerSec>1</_FramesPerSec>
+          </shaderParameters>
+          <drawSize>1.5</drawSize>
+        </bladeGraphicData>
+        <maxBladeLength1>1.3</maxBladeLength1>
+        <minBladeLength1>0.75</minBladeLength1>
+        <Fleck>Force_LightsaberScorch_Fleck</Fleck>
+        <lightsaberSound>
+          <li>Force_LightsaberIgniton_GreenLuke</li>
+          <li>Force_LightsaberIgniton_GreenAhsoka</li>
+          <li>Force_LightsaberIgniton_GreenEzra</li>
+          <li>Force_LightsaberIgniton_GreenQuiGon</li>
+          <li>Force_LightsaberIgniton_GreenYoda</li>
+          <li>Force_LightsaberIgniton_RedMaul</li>
+          <li>Force_LightsaberIgniton_RedDooku</li>
+          <li>Force_LightsaberIgniton_RedDVader</li>
+          <li>Force_LightsaberIgniton_RedKRen</li>
+          <li>Force_LightsaberIgniton_RedSidious</li>
+          <li>Force_LightsaberIgniton_BlueAnakinEPII</li>
+          <li>Force_LightsaberIgniton_BlueCalKestis</li>
+          <li>Force_LightsaberIgniton_BlueEzraBlaster</li>
+          <li>Force_LightsaberIgniton_BlueKananJarrus</li>
+          <li>Force_LightsaberIgniton_BlueObi-Wan</li>
+        </lightsaberSound>
+        <availableHiltGraphics>
+          <li>UFR_LightsaberHilt_Nomad</li>
+        </availableHiltGraphics>
+        <allowedCategories>
+          <li>Force_PowerCell</li>
+          <li>Force_Crystal</li>
+          <li>Force_Lens</li>
+          <li>Force_Emitter</li>
+          <li>Force_Casing</li>
+        </allowedCategories>
+        <renderNodeProperties>
+          <li Class="Lightsaber.PawnRenderNodeProperties_WeaponHolster">
+            <nodeClass>Lightsaber.PawnRenderNode_WeaponHolster</nodeClass>
+            <workerClass>Lightsaber.PawnRenderNodeWorker_WeaponHolster</workerClass>
+            <visibleFacing>
+              <li>East</li>
+              <li>West</li>
+              <li>South</li>
+            </visibleFacing>
+            <parentTagDef>ApparelBody</parentTagDef>
+            <drawData>
+              <defaultData>
+                <offset>-0.2, 0, -0.8</offset>
+                <layer>63</layer>
+                <rotationOffset>135</rotationOffset>
+              </defaultData>
+              <dataNorth>
+                <layer>-3</layer>
+              </dataNorth>
+              <dataWest>
+                <offset>0, 0, -0.75</offset>
+                <layer>63</layer>
+                <rotationOffset>225</rotationOffset>
+              </dataWest>
+              <dataEast>
+                <offset>0, 0, -0.75</offset>
+                <layer>63</layer>
+                <rotationOffset>135</rotationOffset>
+              </dataEast>
+              <scale>.61</scale>
+              <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+            </drawData>
+            <baseLayer>73</baseLayer>
+          </li>
+        </renderNodeProperties>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

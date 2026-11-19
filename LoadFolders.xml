@@ -15,5 +15,6 @@
 		<!-- Mod Patches -->
 		<li IfModActive="CETeam.CombatExtended">1.7/Mods/CE</li>	
 		<li IfModActiveAll="ceteam.combatextended,Ludeon.RimWorld.Odyssey">1.7/Mods/CE_Odyssey</li>
+		<li IfModActive="lee.theforce.lightsaber">1.7/Mods/TheForce</li>
 	</v1.7>	
 </loadFolders>
