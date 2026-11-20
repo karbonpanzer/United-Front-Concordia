@@ -21,7 +21,7 @@ namespace UnitedFront.Harmony
             if (forStatue || !__result || rec.graphic == null) return;
             if (rec.graphic.Shader != ShaderDatabase.CutoutComplex) return;
 
-            CompColorMarker comp = apparel.GetComp<CompColorMarker>();
+            Comp_ColorMarker comp = apparel.GetComp<Comp_ColorMarker>();
             if (comp == null || comp.ZoneCount < 2) return;
 
             Color colorTwo = apparel.DrawColorTwo;
