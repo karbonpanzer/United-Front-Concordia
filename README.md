@@ -1,11 +1,11 @@
 <p align="center"><img src="About/preview.png" alt="United Front - Concordia" width="1280"></p>
-<p align="center"><img src="Storage/Workshopmaterials/Exported/Infographic_Armor1.png" alt="Carapace Armor" width="1280"></p>
-<p align="center"><img src="Storage/Workshopmaterials/Exported/Infographic_Armor2.png" alt="Carapace Armor cont." width="1280"></p>
-<p align="center"><img src="Storage/Workshopmaterials/Exported/Infographic_Armor3.png" alt="Carapace Armor Accessories" width="1280"></p>
-<p align="center"><img src="Storage/Workshopmaterials/Exported/Infographic_Weapons1.png" alt="Sabot Weapons" width="1280"></p>
-<p align="center"><img src="Storage/Workshopmaterials/Exported/Infographic_Weapons2.png" alt="Frequency Weapons" width="1280"></p>
-<p align="center"><img src="Storage/Workshopmaterials/Exported/Infographic_Apparel.png" alt="Apparel" width="1280"></p>
-<p align="center"><img src="Storage/Workshopmaterials/Exported/Infographic_Goodies.png" alt="Goodies" width="1280"></p>
+<p align="center"><img src="Storage/WorkshopMaterials/Exported/Infographic_Armor1.png" alt="Carapace Armor" width="1280"></p>
+<p align="center"><img src="Storage/WorkshopMaterials/Exported/Infographic_Armor2.png" alt="Carapace Armor cont." width="1280"></p>
+<p align="center"><img src="Storage/WorkshopMaterials/Exported/Infographic_Armor3.png" alt="Carapace Armor Accessories" width="1280"></p>
+<p align="center"><img src="Storage/WorkshopMaterials/Exported/Infographic_Weapons1.png" alt="Sabot Weapons" width="1280"></p>
+<p align="center"><img src="Storage/WorkshopMaterials/Exported/Infographic_Weapons2.png" alt="Frequency Weapons" width="1280"></p>
+<p align="center"><img src="Storage/WorkshopMaterials/Exported/Infographic_Apparel.png" alt="Apparel" width="1280"></p>
+<p align="center"><img src="Storage/WorkshopMaterials/Exported/Infographic_Goodies.png" alt="Goodies" width="1280"></p>
 
 # United Front - Concordia
 
