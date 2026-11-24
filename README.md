@@ -1,7 +1,11 @@
 <p align="center"><img src="About/preview.png" alt="United Front - Concordia" width="1280"></p>
-<p align="center"><img src="About/Screenshot1_Armor.png" alt="Armor" width="1280"></p>
-<p align="center"><img src="About/Screenshot2_Weapons.png" alt="Weapons" width="1280"></p>
-<p align="center"><img src="About/Screenshot3_Goodies.png" alt="Goodies" width="1280"></p>
+<p align="center"><img src="Storage/Workshopmaterials/Exported/Infographic_Armor1.png" alt="Carapace Armor" width="1280"></p>
+<p align="center"><img src="Storage/Workshopmaterials/Exported/Infographic_Armor2.png" alt="Carapace Armor cont." width="1280"></p>
+<p align="center"><img src="Storage/Workshopmaterials/Exported/Infographic_Armor3.png" alt="Carapace Armor Accessories" width="1280"></p>
+<p align="center"><img src="Storage/Workshopmaterials/Exported/Infographic_Weapons1.png" alt="Sabot Weapons" width="1280"></p>
+<p align="center"><img src="Storage/Workshopmaterials/Exported/Infographic_Weapons2.png" alt="Frequency Weapons" width="1280"></p>
+<p align="center"><img src="Storage/Workshopmaterials/Exported/Infographic_Apparel.png" alt="Apparel" width="1280"></p>
+<p align="center"><img src="Storage/Workshopmaterials/Exported/Infographic_Goodies.png" alt="Goodies" width="1280"></p>
 
 # United Front - Concordia
 
@@ -34,6 +38,7 @@ The United Front adds in a new group arriving to the rimworld, which are the "Co
 - High-Frequency Resonators (prereq: Colonial Fabrication Methods)
 - Electrothermal-Chemical Munitions (prereq: Colonial Fabrication Methods)
 - Heavy Electrothermal-Chemical Munitions (prereq: Electrothermal-Chemical Munitions)
+- Sabot Turrets (prereq: Electrothermal-Chemical Munitions)
 
 ## Apparel
 
@@ -71,6 +76,7 @@ The United Front adds in a new group arriving to the rimworld, which are the "Co
 
 - **Armaments Bench** - A workbench needed to produce Carapace Armor, Sabot, and Frequency weapons. With Combat Extended it also makes ETC ammo.
 - **Promachus** - A manufactured cocktail of alcohol, painkillers, and radioactive materials for usage by assault troops.
+- **Sabot Turret** - A turret designed to fire depleted uranium sabot shells, incredibly powerful.
 
 ## Combat Extended
 
@@ -85,6 +91,7 @@ United Front - Concordia has built-in Combat Extended support, no separate patch
 | Sabot Assault Rifle | 8x48mm ETC (30) |
 | Sabot Sniper Rifle | 14x80mm ETC (5) |
 | Sabot Autocannon | 14x80mm ETC (30) |
+| Sabot Turret | 8x48mm ETC (60) |
 
 ## FAQ
 
@@ -106,7 +113,7 @@ Leave a comment, if I make a thread for it people will never use it.
 **Orion** - Big thanks for the Shader even though I did not use it this go around.  
 **Aelanna** - For the tips about sourcing sounds for weapons. 
 **Detvisor** - Many of your textures served as inspiration.
-**Ludeon Studios** - For Great Game and the Star Art used in the Preview image.  
+**Ludeon Studios** - For Great Game.  
 
 [GitHub repository](https://github.com/karbonpanzer/United-Front-Colonials)
 

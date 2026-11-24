@@ -359,7 +359,7 @@
   <ThingDef ParentName="UFR_ApparelArmorCarapaceBase">
     <defName>UFR_MedicCarapaceArmor</defName>
     <label>medic carapace armor</label>
-    <description>A suit of armor, made up of a lightweight plasteel-weave plates which provide moderate protection and with an integrated webbing system configured for providing medical assistance in the field. Created as a cheaper alternative to power armor during conflicts. Armor like this is often used by imperial army medics and urbworld military forces and is marked as such.</description>
+    <description>A suit of armor, made up of a lightweight plasteel-weave plates which provide moderate protection and with an integrated webbing system configured for providing medical assistance in the field. Created as a cheaper alternative to power armor during conflicts. Armor like this is often used by imperial army medics and urbworld chest cutters and is marked as such.</description>
     <graphicData>
       <texPath>UFR/Things/Pawn/Humanlike/Armor/MedicCarapaceArmor/MedicCarapaceArmor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -402,7 +402,7 @@
   <ThingDef ParentName="UFR_ApparelArmorHelmetCarapaceBase">
     <defName>UFR_MedicCarapaceHelmet</defName>
     <label>medic carapace helmet</label>
-    <description>An armored helmet with built in communication system and a protective plasteel-weave plate. Armor like this is often used by imperial army medics and urbworld military forces and is marked as such.</description>
+    <description>An armored helmet with built in communication system and a protective plasteel-weave plate. Armor like this is often used by imperial army medics and urbworld chest cutters and is marked as such.</description>
     <graphicData>
       <texPath>UFR/Things/Pawn/Humanlike/Armor/MedicCarapaceArmor/MedicCarapaceHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
