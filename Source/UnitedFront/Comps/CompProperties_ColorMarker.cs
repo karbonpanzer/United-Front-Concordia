@@ -6,8 +6,6 @@ namespace UnitedFront.Comps
 {
     public sealed class CompProperties_ColorMarker : CompProperties
     {
-        public int zoneCount = 2;
-
         public bool setColorOne = false;
         public Color colorOne = Color.white;
 
@@ -21,14 +19,8 @@ namespace UnitedFront.Comps
             foreach (string error in base.ConfigErrors(parentDef))
                 yield return error;
 
-            if (zoneCount < 1)
-                yield return parentDef.defName + " has CompColorMarker with zoneCount below 1.";
-
-            if (zoneCount > 2)
-                yield return parentDef.defName + " has CompColorMarker with zoneCount " + zoneCount + ", but CutoutComplex only renders 2 zones.";
-
             if (parentDef.apparel != null && !parentDef.apparel.useWornGraphicMask)
-                yield return parentDef.defName + " has CompColorMarker but apparel.useWornGraphicMask is false; zone colors will not render on the pawn.";
+                yield return parentDef.defName + " has CompColorMarker but apparel.useWornGraphicMask is false; colors will not render on the pawn.";
         }
     }
 }

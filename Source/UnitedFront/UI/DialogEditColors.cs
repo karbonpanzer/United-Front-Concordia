@@ -15,14 +15,13 @@ namespace UnitedFront.UI
         {
             public Apparel apparel = null!;
             public Comp_ColorMarker comp = null!;
-            public List<Color> working = null!;
-            public List<Color> original = null!;
+            public Color workingOne;
+            public Color workingTwo;
+            public Color originalOne;
+            public Color originalTwo;
             public Comp_ColorMarker.EditSnapshot snapshot = null!;
-            public int zoneCount;
             public bool locked;
         }
-
-        private const int ColorCount = 2;
 
         private readonly Pawn pawn;
         private readonly List<Piece> pieces = new List<Piece>();
@@ -92,7 +91,6 @@ namespace UnitedFront.UI
                     Comp_ColorMarker? comp = ap.TryGetComp<Comp_ColorMarker>();
                     if (comp == null) continue;
 
-                    int zoneCount = Mathf.Clamp(comp.ZoneCount, 1, ColorCount);
                     Comp_ColorMarker.EditSnapshot snapshot = comp.BeginEdit();
 
                     pieces.Add(new Piece
@@ -100,28 +98,21 @@ namespace UnitedFront.UI
                         apparel = ap,
                         comp = comp,
                         snapshot = snapshot,
-                        zoneCount = zoneCount,
                         locked = pawn.apparel.IsLocked(ap),
-                        working = Normalized(snapshot.zones, zoneCount),
-                        original = new List<Color>(snapshot.zones)
+                        workingOne = snapshot.colorOne,
+                        workingTwo = snapshot.colorTwo,
+                        originalOne = snapshot.colorOne,
+                        originalTwo = snapshot.colorTwo
                     });
                 }
             }
-        }
-
-        private static List<Color> Normalized(List<Color> source, int count)
-        {
-            var list = new List<Color>(source);
-            while (list.Count < count) list.Add(Color.white);
-            if (list.Count > count) list.RemoveRange(count, list.Count - count);
-            return list;
         }
 
         public override void Close(bool doCloseSound = true)
         {
             foreach (Piece p in pieces)
             {
-                if (committed && !p.locked) p.comp.CommitZones(p.working);
+                if (committed && !p.locked) p.comp.Commit(p.workingOne, p.workingTwo);
                 else p.comp.RestoreEdit(p.snapshot);
             }
             PortraitsCache.SetDirty(pawn);
@@ -195,17 +186,14 @@ namespace UnitedFront.UI
             }
 
             float rowGap = 14f;
-            float rowH = (rect.height - rowGap * (p.zoneCount - 1)) / p.zoneCount;
-            for (int c = 0; c < p.zoneCount; c++)
-            {
-                Rect row = new Rect(rect.x, rect.y + c * (rowH + rowGap), rect.width, rowH);
-                DrawColorRow(row, p, c);
-            }
+            float rowH = (rect.height - rowGap) / 2f;
+            DrawColorRow(new Rect(rect.x, rect.y, rect.width, rowH), p, false);
+            DrawColorRow(new Rect(rect.x, rect.y + rowH + rowGap, rect.width, rowH), p, true);
         }
 
-        private void DrawColorRow(Rect row, Piece p, int index)
+        private void DrawColorRow(Rect row, Piece p, bool isColorTwo)
         {
-            bool locked = ZoneLocked(index);
+            bool locked = !isColorTwo && ColorOneLocked;
             Color prevGUI = GUI.color;
             if (locked)
             {
@@ -219,11 +207,11 @@ namespace UnitedFront.UI
             float gap = 8f;
 
             Widgets.Label(new Rect(row.x, row.y, row.width, labelH),
-                index == 0 ? "UFR_ColorPrimary".Translate() : "UFR_ColorSecondary".Translate());
+                isColorTwo ? "UFR_ColorSecondary".Translate() : "UFR_ColorPrimary".Translate());
 
-            Color c = p.working[index];
+            Color c = isColorTwo ? p.workingTwo : p.workingOne;
             Color original = c;
-            Color defColor = p.comp.DefaultZone(index);
+            Color defColor = isColorTwo ? p.comp.DefaultColorTwo : p.comp.DefaultColorOne;
 
             Rect btnRow = new Rect(row.x, row.yMax - btnH, row.width, btnH);
             Rect paletteArea = new Rect(row.x, row.y + labelH + defaultH + 4f, row.width,
@@ -301,8 +289,9 @@ namespace UnitedFront.UI
 
             if (!original.IndistinguishableFrom(c))
             {
-                p.working[index] = c;
-                p.comp.PreviewZones(p.working);
+                if (isColorTwo) p.workingTwo = c;
+                else p.workingOne = c;
+                p.comp.Preview(p.workingOne, p.workingTwo);
                 PortraitsCache.SetDirty(pawn);
             }
         }
@@ -394,8 +383,9 @@ namespace UnitedFront.UI
             {
                 foreach (Piece p in pieces)
                 {
-                    p.working = Normalized(p.original, p.zoneCount);
-                    p.comp.PreviewZones(p.working);
+                    p.workingOne = p.originalOne;
+                    p.workingTwo = p.originalTwo;
+                    p.comp.Preview(p.workingOne, p.workingTwo);
                 }
                 PortraitsCache.SetDirty(pawn);
                 SoundDefOf.Tick_Low.PlayOneShotOnCamera();
@@ -457,7 +447,7 @@ namespace UnitedFront.UI
             list.Add(color);
         }
 
-        private bool ZoneLocked(int index) => index == 0 && ModsConfig.IdeologyActive;
+        private static bool ColorOneLocked => ModsConfig.IdeologyActive;
 
         private static bool IsHelmet(Apparel ap)
         {

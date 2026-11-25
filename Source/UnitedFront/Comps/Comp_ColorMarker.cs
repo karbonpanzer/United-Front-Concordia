@@ -12,12 +12,11 @@ namespace UnitedFront.Comps
     {
         private static readonly Texture2D DevEditColorsIcon = ContentFinder<Texture2D>.Get("UFR/UI/Paint/UFR_CustomizeColor", false);
 
-        // Zone was used because this project originally started with a custom shader and using Zones for areas instead of the usual colorOne and colorTwo, I was an idiot starting with this.
-        public List<Color> zoneColors = new List<Color>();
-        private bool zonesCustomized;
+        public Color colorOne = Color.white;
+        public Color colorTwo = Color.white;
+        private bool customized;
 
         public CompProperties_ColorMarker Props => (CompProperties_ColorMarker)props;
-        public int ZoneCount => Props.zoneCount;
 
         private CompColorable? Colorable => parent.TryGetComp<CompColorable>();
 
@@ -30,11 +29,17 @@ namespace UnitedFront.Comps
             }
         }
 
-        public Color DefaultZone(int index)
+        public Color DefaultColorOne => Props.setColorOne ? Props.colorOne : BaseColor;
+        public Color DefaultColorTwo => Props.setColorTwo ? Props.colorTwo : BaseColor;
+
+        public Color DisplayColorOne => Rotted(colorOne);
+        public Color DisplayColorTwo => Rotted(colorTwo);
+
+        private Color Rotted(Color color)
         {
-            if (index == 0 && Props.setColorOne) return Props.colorOne;
-            if (index == 1 && Props.setColorTwo) return Props.colorTwo;
-            return BaseColor;
+            if (parent is Apparel ap && ap.WornByCorpse)
+                return PawnRenderUtility.GetRottenColor(color);
+            return color;
         }
 
         public override void PostPostMake()
@@ -45,36 +50,17 @@ namespace UnitedFront.Comps
 
         private void ApplyDefaults()
         {
-            if (zonesCustomized) return;
+            if (customized) return;
 
-            EnsureZoneDefaults();
-            for (int i = 0; i < zoneColors.Count; i++)
-                zoneColors[i] = DefaultZone(i);
-
+            colorOne = DefaultColorOne;
+            colorTwo = DefaultColorTwo;
             SetDirty();
-        }
-
-        private void EnsureZoneDefaults()
-        {
-            zoneColors ??= new List<Color>();
-            while (zoneColors.Count < ZoneCount)
-                zoneColors.Add(DefaultZone(zoneColors.Count));
-            if (zoneColors.Count > ZoneCount)
-                zoneColors.RemoveRange(ZoneCount, zoneColors.Count - ZoneCount);
-        }
-
-        public Color GetZone(int index) => (index >= 0 && index < zoneColors.Count) ? zoneColors[index] : Color.white;
-
-        public Color DisplayZone(int index)
-        {
-            if (parent is Apparel ap && ap.WornByCorpse)
-                return PawnRenderUtility.GetRottenColor(GetZone(index));
-            return GetZone(index);
         }
 
         public sealed class EditSnapshot
         {
-            public List<Color> zones = null!;
+            public Color colorOne;
+            public Color colorTwo;
             public bool customized;
             public bool colorableActive;
             public Color colorableColor;
@@ -83,45 +69,43 @@ namespace UnitedFront.Comps
 
         public EditSnapshot BeginEdit()
         {
-            EnsureZoneDefaults();
-
             CompColorable? colorable = Colorable;
-            if (colorable != null && colorable.Active && zoneColors.Count > 0
-                && !zoneColors[0].IndistinguishableFrom(colorable.Color))
-                zoneColors[0] = colorable.Color;
+            if (colorable != null && colorable.Active && !colorOne.IndistinguishableFrom(colorable.Color))
+                colorOne = colorable.Color;
 
             return new EditSnapshot
             {
-                zones = new List<Color>(zoneColors),
-                customized = zonesCustomized,
+                colorOne = colorOne,
+                colorTwo = colorTwo,
+                customized = customized,
                 colorableActive = colorable != null && colorable.Active,
                 colorableColor = colorable?.Color ?? Color.white,
                 desiredColor = colorable?.DesiredColor
             };
         }
 
-        public void PreviewZones(List<Color> colors)
+        public void Preview(Color one, Color two)
         {
-            zoneColors = new List<Color>(colors);
-            EnsureZoneDefaults();
+            colorOne = one;
+            colorTwo = two;
             SyncColorableToPrimary();
             SetDirty();
         }
 
-        public void CommitZones(List<Color> colors)
+        public void Commit(Color one, Color two)
         {
-            zoneColors = new List<Color>(colors);
-            zonesCustomized = true;
-            EnsureZoneDefaults();
+            colorOne = one;
+            colorTwo = two;
+            customized = true;
             SyncColorableToPrimary();
             SetDirty();
         }
 
         public void RestoreEdit(EditSnapshot snapshot)
         {
-            zoneColors = new List<Color>(snapshot.zones);
-            zonesCustomized = snapshot.customized;
-            EnsureZoneDefaults();
+            colorOne = snapshot.colorOne;
+            colorTwo = snapshot.colorTwo;
+            customized = snapshot.customized;
 
             CompColorable? colorable = Colorable;
             if (colorable != null)
@@ -139,26 +123,22 @@ namespace UnitedFront.Comps
         private void SyncColorableToPrimary()
         {
             CompColorable? colorable = Colorable;
-            if (colorable == null || !colorable.Active || zoneColors.Count == 0) return;
-            if (!colorable.Color.IndistinguishableFrom(zoneColors[0]))
-                colorable.SetColor(zoneColors[0]);
+            if (colorable == null || !colorable.Active) return;
+            if (!colorable.Color.IndistinguishableFrom(colorOne))
+                colorable.SetColor(colorOne);
         }
 
         public override Color? ForceColor()
         {
-            if (zoneColors.Count == 0) return null;
-            return zoneColors[0];
+            return colorOne;
         }
 
         public void SyncPrimaryFromColorable(Color dyed)
         {
-            if (props == null) return;
+            if (props == null || colorOne.IndistinguishableFrom(dyed)) return;
 
-            EnsureZoneDefaults();
-            if (zoneColors.Count == 0 || zoneColors[0].IndistinguishableFrom(dyed)) return;
-
-            zoneColors[0] = dyed;
-            zonesCustomized = true;
+            colorOne = dyed;
+            customized = true;
             SetDirty();
         }
 
@@ -170,11 +150,30 @@ namespace UnitedFront.Comps
         public override void PostExposeData()
         {
             base.PostExposeData();
-            Scribe_Collections.Look(ref zoneColors, "UnitedFrontZoneColors", LookMode.Value);
-            Scribe_Values.Look(ref zonesCustomized, "UnitedFrontZonesCustomized", false);
+            Scribe_Values.Look(ref colorOne, "UnitedFrontColorOne", Color.clear);
+            Scribe_Values.Look(ref colorTwo, "UnitedFrontColorTwo", Color.clear);
+            Scribe_Values.Look(ref customized, "UnitedFrontCustomized", false);
+
+            if (Scribe.mode == LoadSaveMode.LoadingVars)
+            {
+                List<Color>? legacyZones = null;
+                Scribe_Collections.Look(ref legacyZones, "UnitedFrontZoneColors", LookMode.Value);
+                if (legacyZones != null)
+                {
+                    if (legacyZones.Count > 0) colorOne = legacyZones[0];
+                    if (legacyZones.Count > 1) colorTwo = legacyZones[1];
+
+                    bool legacyCustomized = false;
+                    Scribe_Values.Look(ref legacyCustomized, "UnitedFrontZonesCustomized", false);
+                    customized = legacyCustomized;
+                }
+            }
 
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
-                EnsureZoneDefaults();
+            {
+                if (colorOne.a <= 0f) colorOne = DefaultColorOne;
+                if (colorTwo.a <= 0f) colorTwo = DefaultColorTwo;
+            }
         }
 
         public override IEnumerable<Gizmo> CompGetWornGizmosExtra()

@@ -14,9 +14,9 @@ namespace UnitedFront.Harmony
             if (__instance is not Apparel apparel) return;
 
             Comp_ColorMarker comp = apparel.GetComp<Comp_ColorMarker>();
-            if (comp == null || comp.ZoneCount < 2) return;
+            if (comp == null) return;
 
-            __result = comp.DisplayZone(1);
+            __result = comp.DisplayColorTwo;
         }
     }
     
