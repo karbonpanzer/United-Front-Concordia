@@ -40,17 +40,6 @@
                     <project>UFR_ColonialFabricationMethods</project>
                 </li>
 
-                <!-- Ferrocrete Bricks for UFRC -->
-                <li Class="ScenPart_StartingResearch" MayRequire="KP.unitedfront.ferrocrete">
-                    <def>StartingResearch</def>
-                    <project>UFR_FerrocreteProduction</project>
-                </li>
-                <li Class="ScenPart_StartingThing_Defined" MayRequire="KP.unitedfront.ferrocrete">
-                    <def>StartingThing_Defined</def>
-                    <thingDef>UFR_FerrocreteBricks</thingDef>
-                    <count>200</count>
-                </li> 
-
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
                     <thingDef>UFR_SabotShotgun</thingDef>
@@ -106,32 +95,32 @@
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
                     <thingDef>Silver</thingDef>
-                    <count>400</count>
+                    <count>600</count>
                 </li>
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
                     <thingDef>MealSurvivalPack</thingDef>
-                    <count>150</count>
+                    <count>80</count>
                 </li>
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
                     <thingDef>ComponentIndustrial</thingDef>
-                    <count>40</count>
-                </li>
-                <li Class="ScenPart_StartingThing_Defined">
-                    <def>StartingThing_Defined</def>
-                    <thingDef>MedicineIndustrial</thingDef>
                     <count>60</count>
                 </li>
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <count>40</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
                     <thingDef>Steel</thingDef>
-                    <count>200</count>
+                    <count>400</count>
                 </li>
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
                     <thingDef>WoodLog</thingDef>
-                    <count>300</count>
+                    <count>500</count>
                 </li>
                 <li Class="ScenPart_ScatterThingsNearPlayerStart">
                     <def>ScatterThingsNearPlayerStart</def>
@@ -294,32 +283,32 @@
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
                     <thingDef>Silver</thingDef>
-                    <count>400</count>
-                </li>
-                <li Class="ScenPart_StartingThing_Defined">
-                    <def>StartingThing_Defined</def>
-                    <thingDef>MealSurvivalPack</thingDef>
-                    <count>150</count>
-                </li>
-                <li Class="ScenPart_StartingThing_Defined">
-                    <def>StartingThing_Defined</def>
-                    <thingDef>ComponentIndustrial</thingDef>
-                    <count>40</count>
-                </li>
-                <li Class="ScenPart_StartingThing_Defined">
-                    <def>StartingThing_Defined</def>
-                    <thingDef>MedicineIndustrial</thingDef>
-                    <count>60</count>
-                </li>
-                <li Class="ScenPart_StartingThing_Defined">
-                    <def>StartingThing_Defined</def>
-                    <thingDef>Steel</thingDef>
                     <count>200</count>
                 </li>
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
+                    <thingDef>MealSurvivalPack</thingDef>
+                    <count>200</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>ComponentIndustrial</thingDef>
+                    <count>50</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <count>100</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Steel</thingDef>
+                    <count>800</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
                     <thingDef>WoodLog</thingDef>
-                    <count>300</count>
+                    <count>600</count>
                 </li>
                 <li Class="ScenPart_ScatterThingsNearPlayerStart">
                     <def>ScatterThingsNearPlayerStart</def>

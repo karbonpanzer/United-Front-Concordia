@@ -183,6 +183,36 @@
         <sustainLoop>False</sustainLoop>
       </li>
     </subSounds>
-  </SoundDef>  
+  </SoundDef> 
+  
+  <!-- Sabot Cannon -->
+  <SoundDef>
+    <defName>UFR_Shot_ETCGatling</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>4</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapon/Minigun/Shot</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>75~75</volumeRange>
+        <pitchRange>0.45~0.55</pitchRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapon/Autocannon</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>70~70</volumeRange>
+        <pitchRange>0.50~0.55</pitchRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
 
 </Defs>

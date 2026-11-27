@@ -13,8 +13,6 @@
 				<li>r_name(p=4)->[founder] [colonial_body]</li>
 				<li>r_name(p=3)->[founder] [governance] [colonial_body]</li>
 				<li>r_name(p=5)->[governance] [governing_body] of [nearnameinitial]</li>
-				<!--li>r_name(p=1)->[nearnameinitial] Expeditionary Command</li>
-				<li>r_name(p=1)->Occupation Authority of [nearnameinitial]</li-->
 				<li>r_name(p=1)->[nearnameinitial]</li>
 
 				<li>nearnameinitial(p=3)->[PlaceOutlander]</li>

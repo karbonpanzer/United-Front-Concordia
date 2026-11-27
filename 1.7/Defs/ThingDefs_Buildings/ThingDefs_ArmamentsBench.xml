@@ -2,19 +2,20 @@
 <Defs>
 
   <WorkGiverDef>
-    <defName>UFR_DoBillsArmamentsBench</defName>
-    <label>fabricate armaments</label>
-    <giverClass>WorkGiver_DoBill</giverClass>
-    <workType>Smithing</workType>
-    <priorityInType>60</priorityInType>
-    <fixedBillGiverDefs>
-      <li>UFR_ArmamentsBench</li>
-    </fixedBillGiverDefs>
-    <verb>fabricate</verb>
-    <gerund>fabricating armaments at</gerund>
-    <requiredCapacities>
-      <li>Manipulation</li>
-    </requiredCapacities>
+      <defName>UFR_DoBillsArmamentsBench</defName>
+      <label>fabricate armaments</label>
+      <giverClass>WorkGiver_DoBill</giverClass>
+      <workType>Smithing</workType>
+      <priorityInType>60</priorityInType>
+      <fixedBillGiverDefs>
+         <li>UFR_ArmamentsBench</li>
+      </fixedBillGiverDefs>
+      <verb>fabricate</verb>
+      <gerund>fabricating armaments at</gerund>
+      <requiredCapacities>
+        <li>Manipulation</li>
+      </requiredCapacities>
+      <prioritizeSustains>true</prioritizeSustains>
   </WorkGiverDef>
 
   <ThingDef ParentName="BenchBase">

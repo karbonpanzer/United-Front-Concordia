@@ -2,7 +2,7 @@
 <Defs>
     <FactionDef ParentName="PlayerFactionBase">
         <defName>UFR_Colonists</defName>
-        <label>opportunistic colonists</label>
+        <label>New Colony</label>
         <description>a group of colonists from a spacer civilization. Armed with spacer level military gear that they can maintain, they have arrived on this rimworld with the goal of long term settlement.</description>
         <colorSpectrum>
             <li>(0, 0.737, 0.847)</li>
@@ -42,7 +42,7 @@
 
     <FactionDef ParentName="PlayerFactionBase">
         <defName>UFR_Occupiers</defName>
-        <label>occupation force</label>
+        <label>New Occupation</label>
         <description>a group of soldiers from a spacer civilization. Armed with the best equipment that was assigned to them, they are part of efforts to "civilize" this world to support the colonial efforts.</description>
         <colorSpectrum>
             <li>(0, 0.737, 0.847)</li>
