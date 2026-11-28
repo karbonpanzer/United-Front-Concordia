@@ -260,6 +260,7 @@
     </placeWorkers>
     <researchPrerequisites>
       <li>UFR_HeavyETCMunitions</li>
+      <li>UFR_ETCTurrets</li>
     </researchPrerequisites>
   </ThingDef>
 
